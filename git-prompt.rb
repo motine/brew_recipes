@@ -10,7 +10,10 @@ class GitPrompt < Formula
     bin.install ["current-git-branch", "pwd-last-two"]
     
     inreplace File.expand_path("~/.bash_profile") do |s|
+      s << "\n"
+      s << "\n"
       s << 'PS1="\$(pwd-last-two)\\[\033[0;37m\]\$(current-git-branch)\[\033[0m\]\\$ "'
+      s << "\n"
     end
   end
 
