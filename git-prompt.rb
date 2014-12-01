@@ -4,7 +4,7 @@ class GitPrompt < Formula
   homepage "https://github.com/motine/gitprompt"
   url "https://github.com/motine/gitprompt/archive/master.zip"
   version "0.3"
-  sha1 "044a9b8d54a9bdc3a330c511bb13c64cdcafb4f5"
+  sha1 "5047147d42f7c539a114e5d82e10fd575eb9b2e9"
 
   def install
     bin.install ["current-git-branch", "pwd-last-two"]
